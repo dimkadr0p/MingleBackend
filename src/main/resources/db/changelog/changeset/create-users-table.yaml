@@ -1,0 +1,45 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-users
+      author: Dmitry
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+
+            - column:
+                name: id
+                type: BIGINT
+                autoIncrement: true
+                constraints:
+                  primaryKey: true
+                  nullable: false
+
+            - column:
+                name: name
+                type: varchar(64)
+                constraints:
+                  unique: true
+                  nullable: false
+
+            - column:
+                name: email
+                type: varchar(320)
+                constraints:
+                  unique: true
+                  nullable: false
+
+            - column:
+                name: password
+                type: varchar(2048)
+                constraints:
+                  nullable: false
+
+            - column:
+                name: last_seen
+                type: timestamp
+
+            - column:
+                name: is_online
+                type: boolean
+
