@@ -22,9 +22,11 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import ru.khachidze.backend.api.service.UserService;
 
 
+
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(securedEnabled = true)
 public class SecurityConfig  {
+
     private UserService userService;
     private JwtRequestFilter jwtRequestFilter;
 
@@ -46,6 +48,7 @@ public class SecurityConfig  {
                 .authorizeRequests()
                 .antMatchers("/api/secured").authenticated()
                 .antMatchers("/api/info").authenticated()
+                .antMatchers("/api/usersAll").authenticated()
                 .antMatchers("/api/admin").hasRole("ADMIN")
                 .anyRequest().permitAll()
                 .and()

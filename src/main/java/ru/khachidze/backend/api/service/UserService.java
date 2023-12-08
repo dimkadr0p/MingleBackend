@@ -21,6 +21,7 @@ import ru.khachidze.backend.store.repository.RoleRepository;
 import ru.khachidze.backend.store.repository.UserRepository;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -153,5 +154,11 @@ public class UserService implements UserDetailsService {
         return user.isPresent();
     }
 
+    public void updateUserLoginTime(String username) {
+        userRepository.findByName(username).ifPresent(user -> {
+            user.setLastSeen(new Date());
+            user.setOnline(true);
+        });
+    }
 
 }

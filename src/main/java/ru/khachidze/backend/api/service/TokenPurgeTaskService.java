@@ -23,7 +23,7 @@ public class TokenPurgeTaskService {
     public void purgeExpired() {
 
         Date now = Date.from(Instant.now());
-        log.info("Сработал шидулер для удаление просроченных токенов");
+        log.info("Сработал шидулер для удаление просроченных токенов восстановление пароля");
         passwordTokenRepository.deleteAllExpiredSince(now);
     }
 }
