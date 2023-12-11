@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: add-unique-constraint-friends-table
+      author: Dmitry
+      changes:
+        - addUniqueConstraint:
+            tableName: friends
+            columnNames: user_id, friend_id
+            constraintName: unique_user_friend

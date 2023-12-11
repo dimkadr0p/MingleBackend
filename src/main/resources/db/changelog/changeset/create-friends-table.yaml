@@ -1,0 +1,55 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-friends-table
+      author: Dmitry
+      changes:
+        - createTable:
+            tableName: friends
+            columns:
+
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: user_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: friend_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: status
+                  type: varchar(64)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: recording_time
+                  type: timestamp
+                  constraints:
+                    nullable: false
+
+
+              - addForeignKeyConstraint:
+                  baseTableName: friends
+                  baseColumnNames: user_id
+                  referencedTableName: users
+                  referencedColumnNames: id
+                  constraintName: fk_friends_1
+
+              - addForeignKeyConstraint:
+                  baseTableName: friends
+                  baseColumnNames: friend_id
+                  referencedTableName: users
+                  referencedColumnNames: id
+                  constraintName: fk_friends_2
