@@ -23,6 +23,7 @@ target/
 
 ### logs ###
 /logs
+backend/logs/Mingle.log
 
 ### NetBeans ###
 /nbproject/private/

@@ -6,6 +6,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.khachidze.backend.api.dto.AuthorizedUserDto;
 import ru.khachidze.backend.api.enums.FriendStatus;
+import ru.khachidze.backend.api.exception.UserNotFoundException;
+import ru.khachidze.backend.api.exception.UsernameAlreadyExistsException;
 import ru.khachidze.backend.store.entity.FriendEntity;
 import ru.khachidze.backend.store.entity.UserEntity;
 import ru.khachidze.backend.store.repository.FriendRepository;
@@ -26,10 +28,14 @@ public class FriendService {
     @Autowired
     private UserRepository userRepository;
 
+    public void addFriend(String name, String friendName) {
+        UserEntity user = userRepository.findByName(name).orElseThrow(() -> new UserNotFoundException("User not found"));
+        UserEntity friend = userRepository.findByName(friendName).orElseThrow(() -> new UserNotFoundException("Friend not found"));
 
-    public void addFriend(Long userId, Long friendId) {
-        UserEntity user = userRepository.findById(userId).orElseThrow(() -> new UsernameNotFoundException("User not found"));
-        UserEntity friend = userRepository.findById(friendId).orElseThrow(() -> new UsernameNotFoundException("Friend not found"));
+        friendRepository.findByUserNameAndFriendName(name, friendName)
+                .ifPresent((friendEntity) -> {
+                    throw new UsernameAlreadyExistsException("The user is already in your contacts");
+                });
 
         FriendEntity friendEntity = new FriendEntity();
         friendEntity.setUser(user);
@@ -40,9 +46,9 @@ public class FriendService {
         friendRepository.save(friendEntity);
     }
 
-    public void removeFriend(Long userId, Long friendId) {
-        FriendEntity friendEntity = friendRepository.findByUserIdAndFriendId(userId, friendId)
-                .orElseThrow(() -> new UsernameNotFoundException("Friendship not found"));
+    public void removeFriend(String name, String friendName) {
+        FriendEntity friendEntity = friendRepository.findByUserNameAndFriendName(name, friendName)
+                .orElseThrow(() -> new UserNotFoundException("Friendship not found"));
 
         friendRepository.delete(friendEntity);
     }
