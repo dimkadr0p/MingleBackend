@@ -2,23 +2,11 @@ package ru.khachidze.backend.api.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.tomcat.util.http.parser.Authorization;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import ru.khachidze.backend.api.dto.*;
-import ru.khachidze.backend.api.exception.AppError;
 import ru.khachidze.backend.api.service.AuthService;
-import ru.khachidze.backend.api.service.UserService;
-import ru.khachidze.backend.api.util.JwtTokenUtil;
-import ru.khachidze.backend.store.entity.UserEntity;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;

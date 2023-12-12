@@ -6,8 +6,11 @@ import ru.khachidze.backend.api.enums.FriendStatus;
 import ru.khachidze.backend.store.entity.FriendEntity;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface FriendRepository extends JpaRepository<FriendEntity, Long> {
-    List<FriendEntity> findByUserIdAndStatus(int userId, FriendStatus status);
+    List<FriendEntity> findByUserIdAndStatus(Long userId, FriendStatus status);
+
+    Optional<FriendEntity> findByUserIdAndFriendId(Long userId, Long friendId);
 }

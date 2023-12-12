@@ -29,7 +29,7 @@ public class UserStatusService {
 
         for (UserEntity user : users) {
             if (!isUserActive(user)) {
-                log.info("Пользователь {} вышел из сети", user.getName());
+                log.info("Пользователь {} не в сети", user.getName());
                 user.setOnline(false);
                 usersToUpdate.add(user);
             }
@@ -38,6 +38,7 @@ public class UserStatusService {
     }
 
     private boolean isUserActive(UserEntity user) {
+        if(user.getLastSeen() == null) return false;
         Date currentDate = new Date();
         long inactiveDuration = 3 * 60 * 1000; // 3 минут в миллисекундах
         long lastSeenTime = user.getLastSeen().getTime();

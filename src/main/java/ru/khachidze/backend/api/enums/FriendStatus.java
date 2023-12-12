@@ -1,7 +1,6 @@
 package ru.khachidze.backend.api.enums;
 
 public enum FriendStatus {
-    WAITING("ожидание"),
     ACTIVE("активен"),
     INACTIVE("неактивен");
 
