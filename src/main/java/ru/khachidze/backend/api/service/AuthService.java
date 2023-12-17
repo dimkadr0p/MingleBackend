@@ -99,7 +99,7 @@ public class AuthService {
 
             log.info("Сообщение доставлено на почту {}", user.get().getEmail());
         } else {
-            return new ResponseEntity<>(new AppError(HttpStatus.BAD_REQUEST.value(), "Email not exist"), HttpStatus.UNAUTHORIZED);
+            return new ResponseEntity<>(new AppError(HttpStatus.BAD_REQUEST.value(), "Email not exist"), HttpStatus.BAD_REQUEST);
         }
 
         return ResponseEntity.ok(new GenericResponseDto("token has been sent to the email"));

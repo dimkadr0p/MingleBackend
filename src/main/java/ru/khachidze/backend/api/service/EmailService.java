@@ -24,7 +24,7 @@ public class EmailService {
         MimeMessageHelper helper = new MimeMessageHelper(mimeMessage);
 
         try {
-            helper.setFrom("hachidze.d@yandex.ru", "MusicMaven");
+            helper.setFrom("hachidze.d@yandex.ru", "Mingle");
             helper.setTo(to);
             helper.setSubject(subject);
             helper.setText(text);

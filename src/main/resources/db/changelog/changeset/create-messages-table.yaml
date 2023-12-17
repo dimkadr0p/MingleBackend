@@ -1,0 +1,40 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-messages
+      author: Dmitry
+      changes:
+        - createTable:
+            tableName: messages
+            columns:
+
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: sender_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: recipient_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: content
+                  type: clob
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: recording_time
+                  type: timestamp
+                  constraints:
+                    nullable: false
