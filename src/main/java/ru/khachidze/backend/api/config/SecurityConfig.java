@@ -48,6 +48,8 @@ public class SecurityConfig  {
                 .antMatchers("/api/info").authenticated()
                 .antMatchers("/api/usersAll").authenticated()
                 .antMatchers("/api/addFriend").authenticated()
+                .antMatchers("/api/sendMessage").authenticated()
+                .antMatchers("/api//messages").authenticated()
                 .antMatchers("/api/admin").hasRole("ADMIN")
                 //TODO::В будущем сделать доступным просмотр контактов только для admin(api/friendAll?id=)
                 .anyRequest().permitAll()
