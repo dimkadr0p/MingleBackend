@@ -1,8 +1,10 @@
 package ru.khachidze.backend.api.controller;
 
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import ru.khachidze.backend.api.dto.MessageDto;
 import ru.khachidze.backend.api.exception.UserNotFoundException;
@@ -16,6 +18,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
+@Transactional
+@Slf4j
 public class MessageController {
 
     @Autowired
@@ -23,7 +27,6 @@ public class MessageController {
 
     @Autowired
     private UserRepository userRepository;
-
 
     @PostMapping("/sendMessage")
     public ResponseEntity<?> sendMessage(Principal principal, @RequestBody MessageDto messageDto) {
@@ -34,9 +37,17 @@ public class MessageController {
         return ResponseEntity.ok("Message sent successfully");
     }
 
+    @PostMapping("/delConversation")
+    public ResponseEntity<?> deleteConversation(Principal principal,  @RequestParam("name") String friendName) {
+        log.info("Пользователь {}, удалил беседу с контактом {}", principal.getName(), friendName);
+        messageService.deleteConversation(principal.getName(), friendName);
+        return ResponseEntity.ok("Message remove successfully");
+    }
+
 
     @GetMapping("/dialogs")
     public ResponseEntity<List<MessageEntity>>  getUserDialogs(Principal principal) {
+        if(principal == null) return null;
         UserEntity user = userRepository.findByName(principal.getName()).orElseThrow(() -> new UserNotFoundException("User not found"));
         return ResponseEntity.ok(messageService.getAllUserMessages(user));
     }

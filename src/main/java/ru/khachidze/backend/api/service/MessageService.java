@@ -1,9 +1,14 @@
 package ru.khachidze.backend.api.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import ru.khachidze.backend.api.exception.UserNotFoundException;
+import ru.khachidze.backend.store.entity.FriendEntity;
 import ru.khachidze.backend.store.entity.MessageEntity;
 import ru.khachidze.backend.store.entity.UserEntity;
 import ru.khachidze.backend.store.repository.MessageRepository;
+import ru.khachidze.backend.store.repository.UserRepository;
 
 import java.util.Date;
 import java.util.List;
@@ -12,6 +17,8 @@ import java.util.stream.Collectors;
 @Service
 public class MessageService {
     private final MessageRepository messageRepository;
+    @Autowired
+    private UserRepository userRepository;
 
     public MessageService(MessageRepository messageRepository) {
         this.messageRepository = messageRepository;
@@ -58,8 +65,15 @@ public class MessageService {
         return messageRepository.findAllRecipientsByUserId(id);
     }
 
-    //антон: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbnRvbiIsInJvbGVzIjpbInVzZXIiXSwiZXhwIjoxNzAyODY3MjY0LCJpYXQiOjE3MDI4NjU0NjR9.9sz-xDERXm3MN92J7k81bufwfnt32sz7ZnaLWG2L7-Y
+    public void deleteConversation(String name, String companion) {
+        UserEntity user = userRepository.findByName(name).orElseThrow(() -> new UsernameNotFoundException(
+                String.format("Пользователь '%s' не найден", companion)
+        ));
+        UserEntity userСompanion = userRepository.findByName(companion).orElseThrow(() -> new UsernameNotFoundException(
+                String.format("Пользователь '%s' не найден", companion)
+        ));
+        messageRepository.deleteConversation(user, userСompanion);
+    }
 
-    //Алена: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGVuYSIsInJvbGVzIjpbInVzZXIiXSwiZXhwIjoxNzAyODY5MDIxLCJpYXQiOjE3MDI4NjcyMjF9.3og6y2gqUGdpqLpsqPQhAkKQgP0BN1IDlsD46r3JdHU
 
 }

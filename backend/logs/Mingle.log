@@ -1,155 +1,344 @@
-2023-12-19 00:04:05,449 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
-2023-12-19 00:04:05,774 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
-2023-12-19 00:04:05,777 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
-2023-12-19 00:04:05,778 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
-2023-12-19 00:04:05,778 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
-2023-12-19 00:04:05,779 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
-2023-12-19 00:04:05,779 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь andrey не в сети
-2023-12-19 00:04:05,779 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
-2023-12-19 00:04:05,779 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
-2023-12-19 00:04:05,779 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
-2023-12-19 00:05:17,462 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-8] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: alena
-2023-12-19 00:05:17,462 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-9] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: alena
-2023-12-19 00:09:05,644 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
-2023-12-19 00:09:05,795 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
-2023-12-19 00:09:05,809 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
-2023-12-19 00:09:05,809 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
-2023-12-19 00:09:05,810 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
-2023-12-19 00:09:05,810 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
-2023-12-19 00:09:05,812 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь andrey не в сети
-2023-12-19 00:09:05,812 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
-2023-12-19 00:09:05,812 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
-2023-12-19 00:09:05,814 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
-2023-12-19 00:14:05,718 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
-2023-12-19 00:14:05,871 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
-2023-12-19 00:14:05,902 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
-2023-12-19 00:14:05,903 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
-2023-12-19 00:14:05,905 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
-2023-12-19 00:14:05,910 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
-2023-12-19 00:14:05,911 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь andrey не в сети
-2023-12-19 00:14:05,911 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
-2023-12-19 00:14:05,911 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
-2023-12-19 00:14:05,912 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
-2023-12-19 00:19:05,807 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
-2023-12-19 00:19:05,960 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
-2023-12-19 00:19:05,985 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
-2023-12-19 00:19:05,986 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
-2023-12-19 00:19:05,988 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
-2023-12-19 00:19:05,988 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
-2023-12-19 00:19:05,988 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь andrey не в сети
-2023-12-19 00:19:05,988 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
-2023-12-19 00:19:05,988 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
-2023-12-19 00:19:05,988 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
-2023-12-19 00:24:05,841 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
-2023-12-19 00:24:06,010 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
-2023-12-19 00:24:06,047 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
-2023-12-19 00:24:06,054 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
-2023-12-19 00:24:06,059 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
-2023-12-19 00:24:06,061 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
-2023-12-19 00:24:06,061 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь andrey не в сети
-2023-12-19 00:24:06,062 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
-2023-12-19 00:24:06,063 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
-2023-12-19 00:24:06,065 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
-2023-12-19 00:29:05,907 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
-2023-12-19 00:29:06,117 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
-2023-12-19 00:29:06,129 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
-2023-12-19 00:29:06,130 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
-2023-12-19 00:29:06,131 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
-2023-12-19 00:29:06,132 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
-2023-12-19 00:29:06,132 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь andrey не в сети
-2023-12-19 00:29:06,134 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
-2023-12-19 00:29:06,135 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
-2023-12-19 00:29:06,137 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
-2023-12-19 00:34:05,923 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
-2023-12-19 00:34:06,172 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
-2023-12-19 00:34:06,182 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
-2023-12-19 00:34:06,183 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
-2023-12-19 00:34:06,184 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
-2023-12-19 00:34:06,185 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
-2023-12-19 00:34:06,187 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь andrey не в сети
-2023-12-19 00:34:06,187 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
-2023-12-19 00:34:06,187 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
-2023-12-19 00:34:06,188 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
-2023-12-19 00:39:05,961 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
-2023-12-19 00:39:06,220 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
-2023-12-19 00:39:06,246 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
-2023-12-19 00:39:06,247 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
-2023-12-19 00:39:06,248 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
-2023-12-19 00:39:06,248 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
-2023-12-19 00:39:06,248 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь andrey не в сети
-2023-12-19 00:39:06,249 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
-2023-12-19 00:39:06,250 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
-2023-12-19 00:39:06,250 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
-2023-12-19 00:44:06,005 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
-2023-12-19 00:44:06,284 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
-2023-12-19 00:44:06,292 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
-2023-12-19 00:44:06,292 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
-2023-12-19 00:44:06,293 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
-2023-12-19 00:44:06,294 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
-2023-12-19 00:44:06,294 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь andrey не в сети
-2023-12-19 00:44:06,295 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
-2023-12-19 00:44:06,295 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
-2023-12-19 00:44:06,295 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
-2023-12-19 00:49:06,048 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
-2023-12-19 00:49:06,326 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
-2023-12-19 00:49:06,335 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
-2023-12-19 00:49:06,335 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
-2023-12-19 00:49:06,336 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
-2023-12-19 00:49:06,336 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
-2023-12-19 00:49:06,337 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь andrey не в сети
-2023-12-19 00:49:06,337 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
-2023-12-19 00:49:06,338 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
-2023-12-19 00:49:06,338 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
-2023-12-19 00:54:06,081 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
-2023-12-19 00:54:06,369 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
-2023-12-19 00:54:06,439 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
-2023-12-19 00:54:06,440 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
-2023-12-19 00:54:06,441 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
-2023-12-19 00:54:06,441 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
-2023-12-19 00:54:06,441 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь andrey не в сети
-2023-12-19 00:54:06,443 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
-2023-12-19 00:54:06,443 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
-2023-12-19 00:54:06,443 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
-2023-12-19 00:58:08,239 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-2] Время жизни вышло
-2023-12-19 00:58:08,239 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-1] Время жизни вышло
-2023-12-19 00:58:13,861 INFO ru.khachidze.backend.api.service.AuthService [http-nio-8080-exec-6] In createNewUser: Попытка входа пользователя login: alena и password: Wecehrfcf12#
-2023-12-19 00:58:14,040 INFO ru.khachidze.backend.api.service.AuthService [http-nio-8080-exec-6] In createNewUser: Пользователю login: alena и password: Wecehrfcf12# успешно выдан токен
-2023-12-19 00:58:15,777 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-9] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: alena
-2023-12-19 00:58:15,777 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-7] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: alena
-2023-12-19 00:59:06,105 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
-2023-12-19 00:59:06,475 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
-2023-12-19 00:59:06,480 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
-2023-12-19 00:59:06,480 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
-2023-12-19 00:59:06,482 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
-2023-12-19 00:59:06,482 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
-2023-12-19 00:59:06,483 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь andrey не в сети
-2023-12-19 00:59:06,483 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
-2023-12-19 00:59:06,483 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
-2023-12-19 01:00:52,135 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-3] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: alena
-2023-12-19 01:00:52,135 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-4] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: alena
-2023-12-19 01:00:56,298 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-1] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: alena
-2023-12-19 01:00:56,302 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-2] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: alena
-2023-12-19 01:04:06,279 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
-2023-12-19 01:04:06,510 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
-2023-12-19 01:04:06,514 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
-2023-12-19 01:04:06,514 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
-2023-12-19 01:04:06,514 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
-2023-12-19 01:04:06,514 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
-2023-12-19 01:04:06,514 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь andrey не в сети
-2023-12-19 01:04:06,518 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
-2023-12-19 01:04:06,518 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
-2023-12-19 01:04:06,518 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
-2023-12-19 01:08:21,907 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-9] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: alena
-2023-12-19 01:08:21,907 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-7] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: alena
-2023-12-19 01:09:06,299 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
-2023-12-19 01:09:06,532 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
-2023-12-19 01:09:06,542 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
-2023-12-19 01:09:06,543 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
-2023-12-19 01:09:06,543 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
-2023-12-19 01:09:06,544 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
-2023-12-19 01:09:06,544 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь andrey не в сети
-2023-12-19 01:09:06,544 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
-2023-12-19 01:09:06,545 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
-2023-12-19 01:09:12,234 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-12-19 01:09:12,293 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2023-12-19 01:09:12,364 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-01-20 01:35:11,898 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2024-01-20 01:35:11,919 INFO ru.khachidze.backend.MingleServiceApplication [main] Starting MingleServiceApplication using Java 17.0.2 on LAPTOP-OUHQC63F with PID 10572 (D:\MingleProject\backend\target\classes started by dmitr in D:\MingleProject\backend)
+2024-01-20 01:35:11,920 INFO ru.khachidze.backend.MingleServiceApplication [main] No active profile set, falling back to default profiles: default
+2024-01-20 01:35:13,592 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-20 01:35:13,679 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 78 ms. Found 5 JPA repository interfaces.
+2024-01-20 01:35:14,295 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2f236de0' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-20 01:35:14,320 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-20 01:35:14,867 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2024-01-20 01:35:14,878 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-20 01:35:14,878 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2024-01-20 01:35:14,879 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2024-01-20 01:35:14,971 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2024-01-20 01:35:14,971 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2987 ms
+2024-01-20 01:35:15,237 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-20 01:35:15,554 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-20 01:35:16,045 INFO liquibase.lockservice [main] Successfully acquired change log lock
+2024-01-20 01:35:16,517 INFO liquibase.changelog [main] Reading from public.databasechangelog
+2024-01-20 01:35:16,564 INFO liquibase.lockservice [main] Successfully released change log lock
+2024-01-20 01:35:16,568 INFO liquibase.lockservice [main] Successfully acquired change log lock
+2024-01-20 01:35:16,569 WARN liquibase.hub [main] Skipping auto-registration
+2024-01-20 01:35:16,574 INFO liquibase.lockservice [main] Successfully released change log lock
+2024-01-20 01:35:16,679 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-20 01:35:16,744 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-01-20 01:35:16,903 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-20 01:35:17,034 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-01-20 01:35:17,997 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-20 01:35:18,014 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-20 01:35:19,293 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@672549f3, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e14ed59, org.springframework.security.web.header.HeaderWriterFilter@25cef4b3, org.springframework.web.filter.CorsFilter@4791d904, org.springframework.security.web.authentication.logout.LogoutFilter@66450129, ru.khachidze.backend.api.config.JwtRequestFilter@41041c31, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d21d12b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@473c491, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ba516ff, org.springframework.security.web.session.SessionManagementFilter@6aa85fcf, org.springframework.security.web.access.ExceptionTranslationFilter@16ca4532, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60cbba57]
+2024-01-20 01:35:19,345 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-20 01:35:19,929 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-01-20 01:35:19,989 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-20 01:35:20,004 INFO ru.khachidze.backend.MingleServiceApplication [main] Started MingleServiceApplication in 8.669 seconds (JVM running for 12.506)
+2024-01-20 01:35:20,016 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
+2024-01-20 01:35:20,050 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
+2024-01-20 01:35:20,174 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
+2024-01-20 01:35:20,174 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
+2024-01-20 01:35:20,174 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
+2024-01-20 01:35:20,174 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
+2024-01-20 01:35:20,174 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
+2024-01-20 01:35:20,175 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
+2024-01-20 01:35:20,175 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
+2024-01-20 01:35:20,175 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь andrey не в сети
+2024-01-20 01:35:30,028 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-20 01:35:30,029 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-01-20 01:35:30,031 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2024-01-20 01:35:30,335 INFO ru.khachidze.backend.api.service.AuthService [http-nio-8080-exec-2] In createNewUser: Попытка входа пользователя login: andrey и password: Wecehrfcf12#
+2024-01-20 01:35:30,795 INFO ru.khachidze.backend.api.service.AuthService [http-nio-8080-exec-2] In createNewUser: Пользователю login: andrey и password: Wecehrfcf12# успешно выдан токен
+2024-01-20 01:35:31,093 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-4] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:35:31,093 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-6] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:35:31,330 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-7] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:35:31,337 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-2] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:35:31,342 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-4] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:35:31,342 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-3] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:35:31,346 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-6] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:35:31,352 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-10] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:35:31,579 INFO ru.khachidze.backend.api.controller.FriendController [http-nio-8080-exec-2] получили всех друзей
+2024-01-20 01:35:31,579 INFO ru.khachidze.backend.api.controller.FriendController [http-nio-8080-exec-4] получили всех друзей
+2024-01-20 01:35:36,396 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-8] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:35:41,419 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-9] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:35:46,786 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-1] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:35:52,022 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-5] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:35:57,238 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-7] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:36:02,442 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-10] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:36:07,688 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-4] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:36:12,909 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-2] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:36:18,167 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-6] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:36:23,381 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-3] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:36:28,608 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-8] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:36:33,673 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-10] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:36:38,725 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-4] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:36:43,958 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-2] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:36:49,254 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-6] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:36:54,410 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-3] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:36:59,654 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-8] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:37:05,224 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-9] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:37:10,295 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-1] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:37:15,535 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-7] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:37:20,532 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-5] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:37:25,540 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-10] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:37:30,560 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-4] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:37:35,577 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-2] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:37:40,619 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-6] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:37:45,711 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-3] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:37:50,914 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-8] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:37:55,921 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-9] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:38:01,172 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-1] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:38:06,310 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-7] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:38:11,370 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-5] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:38:17,208 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-10] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:38:21,268 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-20 01:38:21,272 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-01-20 01:38:21,278 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-01-20 01:47:08,939 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2024-01-20 01:47:08,947 INFO ru.khachidze.backend.MingleServiceApplication [main] Starting MingleServiceApplication using Java 17.0.2 on LAPTOP-OUHQC63F with PID 13140 (D:\MingleProject\backend\target\classes started by dmitr in D:\MingleProject\backend)
+2024-01-20 01:47:08,947 INFO ru.khachidze.backend.MingleServiceApplication [main] No active profile set, falling back to default profiles: default
+2024-01-20 01:47:10,194 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-20 01:47:10,320 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 109 ms. Found 5 JPA repository interfaces.
+2024-01-20 01:47:10,991 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@e84fb85' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-20 01:47:10,998 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-20 01:47:11,568 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2024-01-20 01:47:11,588 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-20 01:47:11,589 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2024-01-20 01:47:11,589 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2024-01-20 01:47:11,699 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2024-01-20 01:47:11,700 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2699 ms
+2024-01-20 01:47:11,900 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-20 01:47:12,187 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-20 01:47:12,659 INFO liquibase.lockservice [main] Successfully acquired change log lock
+2024-01-20 01:47:13,050 INFO liquibase.changelog [main] Reading from public.databasechangelog
+2024-01-20 01:47:13,095 INFO liquibase.lockservice [main] Successfully released change log lock
+2024-01-20 01:47:13,099 INFO liquibase.lockservice [main] Successfully acquired change log lock
+2024-01-20 01:47:13,100 WARN liquibase.hub [main] Skipping auto-registration
+2024-01-20 01:47:13,105 INFO liquibase.lockservice [main] Successfully released change log lock
+2024-01-20 01:47:13,193 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-20 01:47:13,261 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-01-20 01:47:13,477 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-20 01:47:13,650 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-01-20 01:47:14,301 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-20 01:47:14,308 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-20 01:47:15,199 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b3284, org.springframework.security.web.context.SecurityContextPersistenceFilter@76929266, org.springframework.security.web.header.HeaderWriterFilter@22decfa2, org.springframework.web.filter.CorsFilter@500beb9f, org.springframework.security.web.authentication.logout.LogoutFilter@495598c5, ru.khachidze.backend.api.config.JwtRequestFilter@4c81e7c2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a13b5c1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46d83ec4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67e37d25, org.springframework.security.web.session.SessionManagementFilter@14a5d7ee, org.springframework.security.web.access.ExceptionTranslationFilter@1737834, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@39e91bda]
+2024-01-20 01:47:15,271 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-20 01:47:15,640 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-01-20 01:47:15,665 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-20 01:47:15,678 INFO ru.khachidze.backend.MingleServiceApplication [main] Started MingleServiceApplication in 7.349 seconds (JVM running for 8.372)
+2024-01-20 01:47:15,687 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
+2024-01-20 01:47:15,710 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
+2024-01-20 01:47:15,814 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
+2024-01-20 01:47:15,815 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
+2024-01-20 01:47:15,815 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
+2024-01-20 01:47:15,815 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
+2024-01-20 01:47:15,815 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
+2024-01-20 01:47:15,815 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь andrey не в сети
+2024-01-20 01:47:15,815 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
+2024-01-20 01:47:15,815 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
+2024-01-20 01:47:40,864 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-20 01:47:40,864 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-01-20 01:47:40,866 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2024-01-20 01:47:41,030 INFO ru.khachidze.backend.api.service.AuthService [http-nio-8080-exec-2] In createNewUser: Попытка входа пользователя login: andrey и password: Wecehrfcf12#
+2024-01-20 01:47:41,256 INFO ru.khachidze.backend.api.service.AuthService [http-nio-8080-exec-2] In createNewUser: Пользователю login: andrey и password: Wecehrfcf12# успешно выдан токен
+2024-01-20 01:47:41,487 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-3] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:47:41,487 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-4] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:47:41,689 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-5] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:47:41,690 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-6] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:47:41,709 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-9] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:47:41,710 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-7] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:47:41,712 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-1] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:47:41,714 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-8] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:47:41,925 INFO ru.khachidze.backend.api.controller.FriendController [http-nio-8080-exec-6] получили всех друзей
+2024-01-20 01:47:42,001 INFO ru.khachidze.backend.api.controller.FriendController [http-nio-8080-exec-9] получили всех друзей
+2024-01-20 01:52:15,727 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
+2024-01-20 01:52:15,976 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
+2024-01-20 01:52:16,053 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
+2024-01-20 01:52:16,054 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
+2024-01-20 01:52:16,054 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
+2024-01-20 01:52:16,054 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
+2024-01-20 01:52:16,054 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
+2024-01-20 01:52:16,054 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
+2024-01-20 01:52:16,054 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
+2024-01-20 01:52:16,054 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь andrey не в сети
+2024-01-20 01:54:30,125 INFO ru.khachidze.backend.api.service.AuthService [http-nio-8080-exec-8] In createNewUser: Попытка входа пользователя login: andrey и password: Wecehrfcf12#
+2024-01-20 01:54:30,244 INFO ru.khachidze.backend.api.service.AuthService [http-nio-8080-exec-8] In createNewUser: Пользователю login: andrey и password: Wecehrfcf12# успешно выдан токен
+2024-01-20 01:55:01,497 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-1] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:57:15,838 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
+2024-01-20 01:57:16,135 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
+2024-01-20 01:57:16,183 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
+2024-01-20 01:57:16,183 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
+2024-01-20 01:57:16,183 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
+2024-01-20 01:57:16,190 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
+2024-01-20 01:57:16,192 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
+2024-01-20 01:57:16,192 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
+2024-01-20 01:57:16,192 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
+2024-01-20 01:58:35,995 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-6] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:59:02,738 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-4] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:59:06,615 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-2] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:59:42,373 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-1] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 01:59:50,605 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-10] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:00:26,914 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-5] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:00:34,217 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-3] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:00:35,129 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-9] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:01:57,728 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-7] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:02:00,768 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-6] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:02:12,671 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-4] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:02:15,918 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
+2024-01-20 02:02:16,241 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
+2024-01-20 02:02:16,254 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
+2024-01-20 02:02:16,255 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
+2024-01-20 02:02:16,256 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
+2024-01-20 02:02:16,256 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
+2024-01-20 02:02:16,257 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
+2024-01-20 02:02:16,258 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
+2024-01-20 02:02:16,258 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
+2024-01-20 02:02:35,129 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-2] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:02:49,781 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-8] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:02:56,464 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-7] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:03:00,680 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-5] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:03:17,120 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-3] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:03:19,054 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-9] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:03:23,270 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-1] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:03:25,092 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-10] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:03:29,439 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-5] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:03:32,825 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-3] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:03:38,145 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-9] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:03:41,320 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-1] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:03:51,979 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-10] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:03:53,811 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-5] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:03:57,355 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-3] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:04:03,749 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-9] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:04:08,612 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-1] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:04:14,183 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-10] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:04:19,541 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-5] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:04:26,143 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-3] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:04:38,720 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-9] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:04:47,208 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-1] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:05:28,633 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-10] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:05:47,577 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-5] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:05:51,631 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-3] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:06:01,996 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-9] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:06:08,368 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-1] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:06:13,609 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-10] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:06:20,966 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-5] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:06:40,890 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-3] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:06:41,393 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-9] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:06:50,970 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-1] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:06:52,443 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-10] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:06:54,674 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-5] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:06:54,980 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-3] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:07:06,719 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-9] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:07:08,530 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-1] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:07:15,933 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
+2024-01-20 02:07:16,275 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
+2024-01-20 02:07:16,283 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
+2024-01-20 02:07:16,284 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
+2024-01-20 02:07:16,284 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
+2024-01-20 02:07:16,284 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
+2024-01-20 02:07:16,285 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
+2024-01-20 02:07:16,285 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
+2024-01-20 02:07:16,286 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
+2024-01-20 02:07:58,355 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-10] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:08:30,769 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-5] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:09:39,180 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-2] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:10:02,368 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-8] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:10:12,500 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-7] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:10:34,571 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-6] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:11:10,645 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-4] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:11:44,452 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-2] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:11:46,859 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-8] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:12:02,710 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-7] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:12:15,943 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
+2024-01-20 02:12:16,317 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
+2024-01-20 02:12:16,321 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
+2024-01-20 02:12:16,322 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
+2024-01-20 02:12:16,322 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
+2024-01-20 02:12:16,323 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
+2024-01-20 02:12:16,323 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
+2024-01-20 02:12:16,324 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
+2024-01-20 02:12:16,324 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
+2024-01-20 02:12:17,404 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-6] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:12:18,201 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-4] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:13:30,723 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-8] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:13:30,727 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-1] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:13:31,118 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-2] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:13:31,124 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-9] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:13:31,132 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-1] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:13:31,138 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-8] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:13:31,144 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-7] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:13:31,160 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-10] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:13:31,162 INFO ru.khachidze.backend.api.controller.FriendController [http-nio-8080-exec-7] получили всех друзей
+2024-01-20 02:13:31,162 INFO ru.khachidze.backend.api.controller.FriendController [http-nio-8080-exec-9] получили всех друзей
+2024-01-20 02:13:45,253 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-5] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:13:50,752 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-3] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:14:25,084 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-8] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:14:32,907 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-6] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:14:34,972 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-4] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:15:02,200 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-2] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:15:04,030 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-1] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:15:08,317 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-10] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:15:10,791 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-6] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:15:27,154 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-4] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:15:29,830 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-2] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:15:36,649 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-1] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:15:45,027 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-10] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:15:56,789 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-6] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:16:03,593 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-4] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:17:14,300 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-8] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:17:15,958 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
+2024-01-20 02:17:16,347 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
+2024-01-20 02:17:16,371 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
+2024-01-20 02:17:16,372 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
+2024-01-20 02:17:16,372 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
+2024-01-20 02:17:16,373 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
+2024-01-20 02:17:16,373 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
+2024-01-20 02:17:16,373 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
+2024-01-20 02:17:16,374 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
+2024-01-20 02:17:27,737 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-9] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:20:46,220 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-6] Время жизни вышло
+2024-01-20 02:21:00,483 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-3] Время жизни вышло
+2024-01-20 02:21:00,497 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-2] Время жизни вышло
+2024-01-20 02:21:04,790 INFO ru.khachidze.backend.api.service.AuthService [http-nio-8080-exec-1] In createNewUser: Попытка входа пользователя login: andrey и password: Wecehrfcf12#
+2024-01-20 02:21:05,032 INFO ru.khachidze.backend.api.service.AuthService [http-nio-8080-exec-1] In createNewUser: Пользователю login: andrey и password: Wecehrfcf12# успешно выдан токен
+2024-01-20 02:21:06,287 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-7] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:21:06,290 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-6] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:21:07,496 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-9] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:21:07,556 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-10] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:21:07,573 INFO ru.khachidze.backend.api.controller.FriendController [http-nio-8080-exec-10] получили всех друзей
+2024-01-20 02:21:07,642 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-6] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:21:07,672 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-7] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:21:07,678 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-5] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:21:07,687 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-4] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:21:07,688 INFO ru.khachidze.backend.api.controller.FriendController [http-nio-8080-exec-5] получили всех друзей
+2024-01-20 02:21:34,676 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-2] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:21:35,154 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-1] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: andrey
+2024-01-20 02:21:44,383 INFO ru.khachidze.backend.api.service.AuthService [http-nio-8080-exec-10] In createNewUser: Попытка входа пользователя login: admin и password: Wecehrfcf12#
+2024-01-20 02:21:44,598 INFO ru.khachidze.backend.api.service.AuthService [http-nio-8080-exec-10] In createNewUser: Пользователю login: admin и password: Wecehrfcf12# успешно выдан токен
+2024-01-20 02:21:46,263 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-4] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: admin
+2024-01-20 02:21:46,264 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-5] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: admin
+2024-01-20 02:21:46,540 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-6] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: admin
+2024-01-20 02:21:46,541 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-7] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: admin
+2024-01-20 02:21:46,541 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-4] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: admin
+2024-01-20 02:21:46,551 INFO ru.khachidze.backend.api.controller.FriendController [http-nio-8080-exec-7] получили всех друзей
+2024-01-20 02:21:46,558 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-3] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: admin
+2024-01-20 02:21:46,566 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-5] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: admin
+2024-01-20 02:21:46,568 INFO ru.khachidze.backend.api.config.JwtRequestFilter [http-nio-8080-exec-2] JwtRequestFilter -> doFilterInternal(): Обновление времени пользователя: admin
+2024-01-20 02:21:46,569 INFO ru.khachidze.backend.api.controller.FriendController [http-nio-8080-exec-3] получили всех друзей
+2024-01-20 02:22:15,972 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
+2024-01-20 02:22:16,392 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
+2024-01-20 02:22:16,397 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
+2024-01-20 02:22:16,398 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
+2024-01-20 02:22:16,399 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
+2024-01-20 02:22:16,399 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
+2024-01-20 02:22:16,400 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
+2024-01-20 02:22:16,400 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
+2024-01-20 02:27:16,006 INFO ru.khachidze.backend.api.service.TokenPurgeTaskService [scheduling-1] Сработал шидулер для удаление просроченных токенов восстановление пароля
+2024-01-20 02:27:16,425 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Сработал шидулер для проверки активности пользователя
+2024-01-20 02:27:16,433 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь sadsadsa не в сети
+2024-01-20 02:27:16,434 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь dsadas не в сети
+2024-01-20 02:27:16,435 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь andrey не в сети
+2024-01-20 02:27:16,436 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь admin не в сети
+2024-01-20 02:27:16,436 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь maksim не в сети
+2024-01-20 02:27:16,437 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь alena не в сети
+2024-01-20 02:27:16,437 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь masha не в сети
+2024-01-20 02:27:16,438 INFO ru.khachidze.backend.api.service.UserStatusService [scheduling-1] Пользователь anton не в сети
+2024-01-20 02:28:20,569 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-20 02:28:20,618 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-01-20 02:28:20,680 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

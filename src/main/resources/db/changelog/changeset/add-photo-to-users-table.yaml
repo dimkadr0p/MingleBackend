@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: add_photo_to_users_table
+      author: Dmitry
+      changes:
+        - addColumn:
+            tableName: users
+            columns:
+              - column:
+                  name: photo
+                  type: BLOB
+                  constraints:
+                    nullable: true

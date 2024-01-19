@@ -1,9 +1,7 @@
 package ru.khachidze.backend.store.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.Collection;
@@ -12,6 +10,8 @@ import java.util.Date;
 @Entity
 @Getter
 @Setter
+@Builder
+@AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "users")
 public class UserEntity {
@@ -35,6 +35,9 @@ public class UserEntity {
 
     @Column(name = "is_online")
     private boolean isOnline;
+
+    @Lob
+    private byte[] photo;
 
     @JsonIgnore
     @ManyToMany

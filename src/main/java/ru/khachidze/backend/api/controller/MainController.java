@@ -37,14 +37,4 @@ public class MainController {
         return "secured data";
     }
 
-    @GetMapping("/info")
-    public ResponseEntity<?> userData(Principal principal) {
-        return ResponseEntity.ok(principal);
-    }
-
-    @GetMapping("/usersAll")
-    public List<UserDto> getUsers() {
-        log.info("получили всех users");
-        return userService.getAllUsers();
-    }
 }

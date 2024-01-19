@@ -1,10 +1,8 @@
 package ru.khachidze.backend.api.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ru.khachidze.backend.api.dto.AuthorizedUserDto;
 import ru.khachidze.backend.api.enums.FriendStatus;
 import ru.khachidze.backend.api.exception.UserNotFoundException;
 import ru.khachidze.backend.api.exception.UsernameAlreadyExistsException;
@@ -54,12 +52,18 @@ public class FriendService {
     }
 
 
-    public List<AuthorizedUserDto> getFriendsOfUser(Long userId) {
+    public List<UserEntity> getFriendsOfUser(Long userId) {
         List<FriendEntity> friends = friendRepository.findByUserIdAndStatus(userId, FriendStatus.ACTIVE);
-        List<AuthorizedUserDto> usersDtoList = new ArrayList<>();
+        List<UserEntity> usersDtoList = new ArrayList<>();
 
         for (FriendEntity friend : friends) {
-            usersDtoList.add(new AuthorizedUserDto(friend.getFriend().getId(), friend.getFriend().getName(), friend.getFriend().getEmail(), friend.getFriend().isOnline()));
+            usersDtoList.add(UserEntity.builder().id(friend.getFriend()
+                    .getId()).name(friend.getFriend()
+                    .getName()).email(friend.getFriend()
+                    .getEmail()).lastSeen(friend.getFriend()
+                    .getLastSeen())
+                    .photo(friend.getFriend().getPhoto())
+                    .isOnline(friend.getFriend().isOnline()).build());
         }
 
         return usersDtoList;
