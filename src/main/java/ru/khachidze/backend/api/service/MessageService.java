@@ -3,8 +3,6 @@ package ru.khachidze.backend.api.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import ru.khachidze.backend.api.exception.UserNotFoundException;
-import ru.khachidze.backend.store.entity.FriendEntity;
 import ru.khachidze.backend.store.entity.MessageEntity;
 import ru.khachidze.backend.store.entity.UserEntity;
 import ru.khachidze.backend.store.repository.MessageRepository;
@@ -12,7 +10,7 @@ import ru.khachidze.backend.store.repository.UserRepository;
 
 import java.util.Date;
 import java.util.List;
-import java.util.stream.Collectors;
+
 
 @Service
 public class MessageService {
@@ -30,23 +28,10 @@ public class MessageService {
         message.setRecipient(recipient);
         message.setContent(content);
         message.setRecordingTime(new Date());
+        message.setRead(false);
         messageRepository.save(message);
     }
 
-    //TODO::Возможно убрать
-    public List<UserEntity> getChatUsers(UserEntity user) {
-        return messageRepository.findDistinctBySenderOrRecipient(user, user)
-                .stream()
-                .map(message -> {
-                    if (message.getSender().equals(user)) {
-                        return message.getRecipient();
-                    } else {
-                        return message.getSender();
-                    }
-                })
-                .distinct()
-                .collect(Collectors.toList());
-    }
 
     public List<MessageEntity> getAllUserMessages(UserEntity user) {
         return messageRepository.findBySenderOrRecipient(user, user);
@@ -60,9 +45,18 @@ public class MessageService {
         return messageRepository.findAllSendersByUserId(id);
     }
 
-
     public List<UserEntity> findAllRecipientsByUserId(Long id) {
         return messageRepository.findAllRecipientsByUserId(id);
+    }
+
+    public void setMessageRead(UserEntity sender, UserEntity recipient) {
+        List<MessageEntity> messages = messageRepository.findBySenderAndRecipient(sender, recipient);
+        for (MessageEntity message : messages) {
+            if (!message.isRead()) {
+                message.setRead(true);
+            }
+        }
+        messageRepository.saveAll(messages);
     }
 
     public void deleteConversation(String name, String companion) {

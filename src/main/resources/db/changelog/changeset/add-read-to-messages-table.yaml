@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: add_read_to_messages_table
+      author: Dmitry
+      changes:
+        - addColumn:
+            tableName: messages
+            columns:
+              - column:
+                  name: is_read
+                  type: boolean
+                  defaultValueBoolean: true
+                  constraints:
+                    nullable: false

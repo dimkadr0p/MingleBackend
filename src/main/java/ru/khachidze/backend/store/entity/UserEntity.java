@@ -36,8 +36,8 @@ public class UserEntity {
     @Column(name = "is_online")
     private boolean isOnline;
 
-    @Lob
-    private byte[] photo;
+    @Column(name = "photo")
+    private String photo;
 
     @JsonIgnore
     @ManyToMany

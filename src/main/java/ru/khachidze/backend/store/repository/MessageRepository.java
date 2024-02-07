@@ -13,6 +13,7 @@ import java.util.List;
 @Repository
 public interface MessageRepository extends JpaRepository<MessageEntity, Long> {
     List<MessageEntity> findBySenderOrRecipient(UserEntity user1, UserEntity user2);
+    List<MessageEntity> findBySenderAndRecipient(UserEntity sender, UserEntity recipient);
 
     @Query("SELECT DISTINCT m.sender FROM MessageEntity m WHERE m.recipient.id = :userId")
     List<UserEntity> findAllSendersByUserId(@Param("userId") Long userId);

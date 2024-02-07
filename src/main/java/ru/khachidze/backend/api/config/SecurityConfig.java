@@ -20,7 +20,6 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import ru.khachidze.backend.api.service.UserService;
 
 
-
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(securedEnabled = true)
 public class SecurityConfig  {
@@ -51,9 +50,10 @@ public class SecurityConfig  {
                 .antMatchers("/api/delConversation").authenticated()
                 .antMatchers("/api/user/upload").authenticated()
                 .antMatchers("/api/sendMessage").authenticated()
+                .antMatchers("/api/markAsRead").authenticated()
                 .antMatchers("/api//messages").authenticated()
+                .antMatchers("/api/photos").authenticated()
                 .antMatchers("/api/admin").hasRole("ADMIN")
-                //TODO::В будущем сделать доступным просмотр контактов только для admin(api/friendAll?id=)
                 .anyRequest().permitAll()
                 .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
@@ -71,18 +71,6 @@ public class SecurityConfig  {
         return source;
     }
 
-    /*
-    *   @Bean
-        public CorsConfigurationSource corsConfigurationSource() {
-            CorsConfiguration configuration = new CorsConfiguration();
-            configuration.setAllowedOrigins(Arrays.asList("*"));
-            configuration.setAllowedMethods(Arrays.asList("*"));
-            configuration.setAllowedHeaders(Arrays.asList("*"));
-            UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-            source.registerCorsConfiguration("/**", configuration);
-            return source;
-        }
-    * */
     @Bean
     public DaoAuthenticationProvider daoAuthenticationProvider() {
         DaoAuthenticationProvider daoAuthenticationProvider = new DaoAuthenticationProvider();

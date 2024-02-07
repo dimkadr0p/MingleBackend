@@ -31,4 +31,7 @@ public class MessageEntity {
 
     @Column(name = "recording_time", nullable = false)
     private Date recordingTime;
+
+    @Column(name = "is_read", nullable = false)
+    private boolean isRead;
 }

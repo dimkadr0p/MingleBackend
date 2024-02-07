@@ -46,20 +46,21 @@ public class MessageController {
 
 
     @GetMapping("/dialogs")
-    public ResponseEntity<List<MessageEntity>>  getUserDialogs(Principal principal) {
+    public ResponseEntity<List<MessageEntity>> getUserDialogs(Principal principal) {
         if(principal == null) return null;
         UserEntity user = userRepository.findByName(principal.getName()).orElseThrow(() -> new UserNotFoundException("User not found"));
         return ResponseEntity.ok(messageService.getAllUserMessages(user));
     }
 
-
-    @GetMapping("/users/chats")
-    public ResponseEntity<List<UserEntity>> getChatUsers(Principal principal) {
-        UserEntity currentUser = userRepository.findByName(principal.getName())
-                .orElseThrow(() -> new UserNotFoundException("User not found"));
-
-        return ResponseEntity.ok(messageService.getChatUsers(currentUser));
+    @PostMapping("/markAsRead")
+    public ResponseEntity<?> markMessagesAsRead(Principal principal, @RequestParam("name") String friendName) {
+        log.info("Пользователь {}, зашел в диалог с контактом {}", principal.getName(), friendName);
+        UserEntity user = userRepository.findByName(principal.getName()).orElseThrow(() -> new UserNotFoundException("User not found"));
+        UserEntity user2 = userRepository.findByName(friendName).orElseThrow(() -> new UserNotFoundException("User not found"));
+        messageService.setMessageRead(user2, user);
+        return ResponseEntity.ok("Message is marked as read");
     }
+
 
 
     @GetMapping("/messages")
