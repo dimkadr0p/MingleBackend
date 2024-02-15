@@ -16,10 +16,7 @@ import ru.khachidze.backend.store.entity.UserEntity;
 import ru.khachidze.backend.store.repository.PasswordResetTokenRepository;
 import ru.khachidze.backend.store.repository.UserRepository;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 
@@ -103,7 +100,7 @@ public class UserService implements UserDetailsService {
 
     public Optional<UserEntity> getUserByPasswordResetToken(String token) {
         Optional<PasswordResetTokenEntity> passwordResetToken = passwordTokenRepository.findByToken(token);
-        if (passwordResetToken.isEmpty()) {
+        if (passwordResetToken.isPresent()) {
             return Optional.empty();
         }
         return Optional.ofNullable(passwordResetToken.get().getUser());
@@ -136,7 +133,7 @@ public class UserService implements UserDetailsService {
         user.setName(registrationUserDto.getName());
         user.setEmail(registrationUserDto.getEmail());
         user.setPassword(passwordEncoder.encode(registrationUserDto.getPassword()));
-        user.setRoles(List.of(roleService.getUserRole()));
+        user.setRoles(Collections.singletonList(roleService.getUserRole()));
         return userRepository.save(user);
     }
 
