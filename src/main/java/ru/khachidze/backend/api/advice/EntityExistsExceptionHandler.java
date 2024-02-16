@@ -8,11 +8,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import ru.khachidze.backend.api.exception.AppError;
-import ru.khachidze.backend.api.exception.EmailAlreadyExistsException;
 import ru.khachidze.backend.api.exception.EntityAlreadyExistsException;
-import ru.khachidze.backend.api.exception.UsernameAlreadyExistsException;
-
-import javax.persistence.EntityExistsException;
 
 @ControllerAdvice
 @Slf4j

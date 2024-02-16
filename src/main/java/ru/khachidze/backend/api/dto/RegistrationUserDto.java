@@ -1,17 +1,14 @@
 package ru.khachidze.backend.api.dto;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import ru.khachidze.backend.api.validation.ValidationRegex;
 
-import javax.validation.constraints.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Pattern;
 
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class RegistrationUserDto {
 
     @NotBlank(message = "The login must be filled in")

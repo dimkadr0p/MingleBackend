@@ -1,5 +1,8 @@
 package ru.khachidze.backend.api.enums;
 
+import lombok.Getter;
+
+@Getter
 public enum FriendStatus {
     ACTIVE("активен"),
     INACTIVE("неактивен");
@@ -10,7 +13,4 @@ public enum FriendStatus {
         this.status = status;
     }
 
-    public String getStatus() {
-        return status;
-    }
 }

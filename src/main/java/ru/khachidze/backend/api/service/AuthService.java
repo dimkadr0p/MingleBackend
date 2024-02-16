@@ -2,29 +2,19 @@ package ru.khachidze.backend.api.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.MessageSource;
-import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.mail.SimpleMailMessage;
-import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 import ru.khachidze.backend.api.dto.*;
-import ru.khachidze.backend.api.exception.AppError;
-import ru.khachidze.backend.api.exception.CustomAuthenticationException;
-import ru.khachidze.backend.api.exception.EmailAlreadyExistsException;
-import ru.khachidze.backend.api.exception.UsernameAlreadyExistsException;
+import ru.khachidze.backend.api.exception.*;
 import ru.khachidze.backend.api.util.JwtTokenUtil;
 import ru.khachidze.backend.store.entity.UserEntity;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Optional;
 import java.util.UUID;
 
 
@@ -64,14 +54,13 @@ public class AuthService {
     }
 
     public ResponseEntity<JwtResponseDto> createAuthToken(JwtRequestDto authRequest) {
-
         try {
             log.info("In createNewUser: Попытка входа пользователя " +
-                    "login: {} и password: {}", authRequest.getName(), authRequest.getPassword());
+                    "login: {}", authRequest.getName());
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authRequest.getName(), authRequest.getPassword()));
         } catch (BadCredentialsException ex) {
             log.info("In createNewUser: Пользователь введенный данные " +
-                    "login: {} и password: {} были неверными", authRequest.getName(), authRequest.getPassword());
+                    "login: {} были неверными", authRequest.getName());
             throw new CustomAuthenticationException("Incorrect login or password");
         }
 
@@ -87,36 +76,29 @@ public class AuthService {
 
     public ResponseEntity<?> resetPassword(HttpServletRequest request, String email) {
 
-        Optional<UserEntity> user = userService.findByEmail(email);
+        UserEntity user = userService.findByEmail(email)
+                .orElseThrow(() -> new EmailNotFoundException("Email not Found"));
 
-        if (user.isPresent()) {
-            String token = UUID.randomUUID().toString();
-            userService.createPasswordResetTokenForUser(user.get(), token);
+        String token = UUID.randomUUID().toString();
 
-            String toSendMessage = constructResetTokenEmail(getAppUrl(request), token);
+        userService.createPasswordResetTokenForUser(user, token);
 
-            emailService.sendMessageToEmail(user.get().getEmail(), "Восстановление пароля", toSendMessage);
+        String toSendMessage = constructResetTokenEmail(getAppUrl(request), token);
 
-            log.info("Сообщение доставлено на почту {}", user.get().getEmail());
-        } else {
-            return new ResponseEntity<>(new AppError(HttpStatus.BAD_REQUEST.value(), "Email not exist"), HttpStatus.BAD_REQUEST);
-        }
+        emailService.sendMessageToEmail(user.getEmail(), "Восстановление пароля", toSendMessage);
+
+        log.info("Сообщение доставлено на почту {}", user.getEmail());
 
         return ResponseEntity.ok(new GenericResponseDto("token has been sent to the email"));
     }
 
     public ResponseEntity<?> deleteRegistrationUser(DeleteUserDto user) {
-        Optional<UserEntity> userOptional = userService.findByName(user.getName());
+        UserEntity userEntity = userService.findByName(user.getName())
+                .orElseThrow(() -> new UserNotFoundException("User not Found"));
 
-        if(userOptional.isPresent()) {
-            UserEntity userEntity = userOptional.get();
-            log.info("user: {} удален", userEntity.getName());
-            userService.deleteUser(userEntity);
-            return ResponseEntity.status(HttpStatus.OK).body(new GenericResponseDto("User is deleted"));
-
-        } else {
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(new GenericResponseDto("unauthorized"));
-        }
+        userService.deleteUser(userEntity);
+        log.info("user: {} удален", userEntity.getName());
+        return ResponseEntity.status(HttpStatus.OK).body(new GenericResponseDto("User is deleted"));
     }
 
     private String constructResetTokenEmail(String contextPath, String token) {

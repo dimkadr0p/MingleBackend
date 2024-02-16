@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import ru.khachidze.backend.api.dto.AuthorizedUserDto;
 import ru.khachidze.backend.api.exception.UserNotFoundException;
 import ru.khachidze.backend.api.service.FriendService;
 import ru.khachidze.backend.store.entity.UserEntity;
@@ -42,7 +41,6 @@ public class FriendController {
     @Transactional
     @GetMapping("/friends")
     public List<UserEntity> getUsers(Principal principal) {
-        log.info("получили всех друзей");
         UserEntity user = userRepository.findByName(principal.getName()).orElseThrow(() -> new UserNotFoundException("User not found"));
         return friendService.getFriendsOfUser(user.getId());
     }

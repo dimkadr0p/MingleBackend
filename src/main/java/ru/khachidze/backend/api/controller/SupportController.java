@@ -1,11 +1,9 @@
 package ru.khachidze.backend.api.controller;
 
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import ru.khachidze.backend.api.advice.NotFoundExceptionHandler;
 import ru.khachidze.backend.api.dto.HelpSupportRequestDto;
 import ru.khachidze.backend.api.dto.SupportResponseToHelp;
 import ru.khachidze.backend.api.exception.QuestionNotFoundException;

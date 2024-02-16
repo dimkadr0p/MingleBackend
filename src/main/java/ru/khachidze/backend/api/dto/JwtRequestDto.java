@@ -1,6 +1,5 @@
 package ru.khachidze.backend.api.dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import ru.khachidze.backend.api.validation.ValidationRegex;
 
@@ -8,7 +7,6 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
 @Data
-@AllArgsConstructor
 public class JwtRequestDto {
 
     @NotBlank(message = "The login must be filled in")
