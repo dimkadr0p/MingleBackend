@@ -105,7 +105,6 @@ public class AuthService {
         return ResponseEntity.ok(new GenericResponseDto("token has been sent to the email"));
     }
 
-    //TODO::Сделать так, чтобы никакой другой пользователь не смог удалить чужой аккаунт
     public ResponseEntity<?> deleteRegistrationUser(DeleteUserDto user) {
         Optional<UserEntity> userOptional = userService.findByName(user.getName());
 

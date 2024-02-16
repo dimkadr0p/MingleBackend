@@ -2,6 +2,7 @@ package ru.khachidze.backend.api.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -53,7 +54,10 @@ public class SecurityConfig  {
                 .antMatchers("/api/markAsRead").authenticated()
                 .antMatchers("/api//messages").authenticated()
                 .antMatchers("/api/photos").authenticated()
+                .antMatchers("/api/helpSupport").authenticated()
                 .antMatchers("/api/admin").hasRole("ADMIN")
+                .antMatchers("/api/helpedOut/").hasRole("ADMIN")
+                .antMatchers("/api/deleteUser").hasRole("ADMIN")
                 .anyRequest().permitAll()
                 .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
